@@ -12,6 +12,8 @@ const from = (param) => clause('FROM', param);
 const where = (param) =>  clause('WHERE', param);
 const like = (param) =>  clause('LIKE', param);
 const innerJoin = (param) => clause('INNER JOIN', param);
+const leftJoin = (param) => clause('LEFT JOIN', param);
+const outerJoin = (param) => clause('OUTER JOIN', param);
 const on = (param) => clause('ON', param);
 const count = (param) => aggregate('COUNT', param);
 
